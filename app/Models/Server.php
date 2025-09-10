@@ -4,9 +4,9 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Channel extends Model
+class Server extends Model
 {
-    protected $table = 'channels';
+    protected $table = 'servers';
 
     protected $fillable = [
         'id',
