@@ -12,4 +12,6 @@ Route::middleware('auth:api')->group(function () {
         Route::post('logout', [App\Http\Controllers\Api\AuthController::class, 'logout']);
         Route::post('me', [App\Http\Controllers\Api\AuthController::class, 'me']);
     });
+
+    Route::resource('servers', App\Http\Controllers\Api\ServerController::class);
 });

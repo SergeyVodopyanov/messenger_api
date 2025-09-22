@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('servers', function (Blueprint $table) {
             $table->uuid('id')->primary();
-            $table->string('title');
+            $table->string('title')->unique();
             $table->string('image_path')->nullable();
             $table->string('invitation_link')->unique();
             $table->timestamps();
