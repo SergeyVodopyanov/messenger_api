@@ -14,4 +14,5 @@ Route::middleware('auth:api')->group(function () {
     });
 
     Route::resource('servers', App\Http\Controllers\Api\ServerController::class);
+    Route::resource('channels', App\Http\Controllers\Api\ChannelController::class);
 });
