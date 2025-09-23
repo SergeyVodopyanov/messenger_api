@@ -12,6 +12,7 @@ class Channel extends Model
     protected $table = 'channels';
 
     protected $fillable = [
-        'title'
+        'title',
+        'server_id',
     ];
 }
